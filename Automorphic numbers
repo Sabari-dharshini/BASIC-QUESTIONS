@@ -1,0 +1,15 @@
+import java.util.Scanner;
+class Automorphic{
+public static void main(String[]args)
+{
+Scanner scan=new Scanner(System.in);
+int num=scan.nextInt();
+int square=num*num;
+int lastDigits = square % (int) Math.pow(10, Integer.toString(num).length());
+if(lastDigits==num){
+System.out.println("Automorphic number");
+}else{
+System.out.println("Not an automorphic number");
+}
+}
+}
